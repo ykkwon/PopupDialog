@@ -48,10 +48,6 @@ public extension PopupDialogDefaultViewController {
         get { return standardView.imageView.image }
         set {
             standardView.imageView.image = newValue
-//            standardView.imageHeightConstraint?.constant = standardView.imageView.pv_heightForImageView()
-            guard let image = standardView.imageView, standardView.imageView.size.height > 0 else {
-                return
-            }
             standardView.imageHeightConstraint?.constant = standardView.imageView.pv_heightForImageView()
         }
     }
